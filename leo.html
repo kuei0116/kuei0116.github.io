@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>leo</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="head">
+        <div class="item" href="/total_sign/">總覽</div>
+        <div class="item" onclick="date()">查詢</div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="sub_header">
+        <div class="sub_container">
+            <img src="{% static 'images/star/獅子.jpg' %}" alt=""><br>
+            <div class="topic">獅子座</div>
+            <div class="date_range">7月23日至8月22日</div>
+            <button type="button" class="btn" onclick="story_leo()">故事</button><br>
+            <button type="button" class="btn" onclick="personality_leo()">個性</button><br>
+            <button type="button" class="btn" onclick="advantage_leo()">優點</button><br>
+            <button type="button" class="btn" onclick="defect_leo()">缺點</button><br>
+        </div>
+        <div class="line"></div>
+        <div id="txt">
+            <div id="title">星座介紹</div>
+            <div class="line2"><hr></div>
+            <div id="img2"><img src="{% static 'images/star/leo2.jpg' %}" alt=""></div>
+            <div id="tag_div"><span>  </span></div>
+            <div style="clear: both;"></div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="date">
+        <div class="d1">
+            <div class="d1-1">
+                <form method="post" action="/leo/">
+                    {% csrf_token %}
+                    <div class="d1-1-1">
+                        <img id="close" src="{% static 'images/close.png' %}" alt="找不到圖片" onclick="close()">
+                    </div>
+                    <div class="d1-1-2">查詢</div>
+                    <div class="d1-1-3">
+                        在下方輸入生日<br>並查詢自己的星座吧~
+                    </div>
+                    <div class="d1-1-3">
+                        生日：<input type="date" name="day">
+                    </div>
+                    <div class="d1-1-4">
+                        <input type="submit" value="確定" class="daybtn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        function date(){
+            var date = document.querySelector('.date')
+            date.style = "display:flex"
+            var close = document.getElementById('close')
+            close.addEventListener('click', function (){
+                var date2 = document.querySelector('.date')
+                date2.style = "display:none"
+            })
+        }
+    </script>
+    <script src="{% static 'js/leo/story.js' %}"></script>
+    <script src="{% static 'js/leo/personality.js' %}"></script>
+    <script src="{% static 'js/leo/advantage.js' %}"></script>
+    <script src="{% static 'js/leo/defect.js' %}"></script>
+</body>
+</html>

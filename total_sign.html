@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'css/1.css'%}">
+    <title>十二星座網</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class=head>十二星座</div>
+    </div>
+
+    <div class="header1">
+        <img src="{%static 'images/star/star.jpg'%}">
+    </div>
+
+    <div class="topic">
+        <div class=container>
+            <div class="fire">
+                <a href=#firepage>火象星座</a>
+            </div>
+            <div class=wind >
+                <a href=#windpage>風象星座</a>
+            </div>
+            <div class=earth>
+                <a href=#earthpage>土象星座</a>
+            </div>
+            <div class=water>
+                <a href=#waterpage>水象星座</a>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+<hr>
+    <div class="Page">
+        <div id="firepage">
+            <div class="content">
+                <img src="{%static '/images/star/fire.png'%}">
+                <div class="text">代表能量，火象星座總是給人熱情、充滿活力、有自信的感覺，他們的自我意識強烈，喜歡表現，成為鎂光燈下的焦點，因此對於當領導者這件事非常熱衷，且因火象星座的自尊心與好勝心很強，因此不喜歡輸的感覺，不易聽進他人的意見。與火象星座溝通時，可以適時地給予稱讚，表現出你有將他們的意見放在心上，別讓他們覺得被忽視囉。</div>
+            <div style="clear:both;"></div>
+            </div>
+            <div class="pageContent">
+                <div class="constellation">
+                    <a href="/aries/">
+                    <img src="{%static '/images/star/牡羊.jpg'%}">
+                    <div class="constellationText">牡羊座</div>
+                    </a>
+                </div>
+                <div class="constellation">
+                    <a href="/leo/">
+                    <img src="{%static '/images/star/獅子.jpg'%}">
+                    <div class="constellationText">獅子座</div>
+                    </a>
+                </div>
+                <div class="constellation">
+                    <a href="/sagittarius/">
+                    <img src="{%static '/images/star/射手.jpg'%}">
+                    <div class="constellationText">射手座</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="windpage">
+            <div class="content">
+                <img src="{%static '/images/star/wind.png'%}">
+                <div class="text">代表頭腦，大家對風象星座的印象就是多變、不受拘束，少了土象星座的拘謹，喜歡自由發揮創意，且風象星座頭腦動得很快，擅長抽象的語言思考能力，邏輯推理，理性分析，溝通表達。其理性思考的特質幫助他們在看待每件事情時，能保持客觀的態度，不涉入個人情感。與風象星座溝通時，要有邏輯且簡單明瞭，一旦風象星座失去興致，便會直接過濾掉你說的一切。</div>
+            <div style="clear:both;"></div>
+            </div>
+            <div class="pageContent">
+                <div class="constellation">
+                    <a href="/gemini/">
+                    <img src="{%static '/images/star/雙子.jpg'%}">
+                    <div class="constellationText">雙子座</div>
+                    </a>
+                </div>
+                <div class="constellation">
+                    <a href="/libra/">
+                    <img src="{%static '/images/star/天秤.jpg'%}">
+                    <div class="constellationText">天秤座</div>
+                    </a>
+                </div>
+                <div class="constellation">
+                    <a href="/aquarius/">
+                    <img src="{%static '/images/star/水瓶.jpg'%}">
+                    <div class="constellationText">水瓶座</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="earthpage">
+            <div class="content">
+                <img src="{%static '/images/star/earth.png'%}">
+                <div class="text">代表身體，土象星座是穩紮穩打的代表，他們不易衝動行事，凡事都會先計畫周全再去執行，腳踏實地且意志力堅強，一旦下定決心就會貫徹始終，執行力非常高，行事風格偏保守務實，善於對每件事做利弊分析，再做出最好的決定，但也因此有時被認為過於固執己見。與土象星座溝通，建議要多點耐心，不要畫大餅，提供實際的事件利害分析，反而比較有機會說服他們喔。
+                </div>
+            <div style="clear:both;"></div>
+            </div>
+            <div class="pageContent">
+                <div class="constellation">
+                    <a href="/capricorn/">
+                    <img src="{%static '/images/star/魔羯.jpg'%}">
+                    <div class="constellationText">魔羯座</div>
+                    </a>
+                </div>
+                <div class="constellation">
+                    <a href="/taurus/">
+                    <img src="{%static '/images/star/金牛.jpg'%}">
+                    <div class="constellationText">金牛座</div>
+                    </a>
+                </div>
+                <div class="constellation">
+                    <a href="/virgo/">
+                    <img src="{%static '/images/star/處女.jpg'%}">
+                    <div class="constellationText">處女座</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="waterpage">
+            <div class="content">
+                <img src="{%static '/images/star/water.png'%}">
+                <div class="text">代表情緒，水象代表情緒，容易被情緒與慾望驅動，也因此生性較纖細敏感，多優先考量感情面。水象星座情感豐沛、富同理心，是很棒的傾聽對象，但也偶爾會陷入鬱鬱寡歡或杞人憂天的情緒。水象星座因受情緒影響大，所以看感覺做事的狀況很常見，與水象星座溝通時，建議多關照他們的感受，讓他們知道你是在乎的。
+                </div>
+            <div style="clear:both;"></div>
+            </div>
+            <div class="pageContent">
+                <div class="constellation">
+                    <a href="/scorpio/">
+                    <img src="{%static '/images/star/天蠍.jpg'%}">
+                    <div class="constellationText">天蠍座</div>
+                    </a>
+                </div>
+                <div class="constellation">
+                    <a href="/cancer/">
+                    <img src="{%static '/images/star/巨蟹.jpg'%}">
+                    <div class="constellationText">巨蟹座</div>
+                    </a>
+                </div>
+                <div class="constellation">
+                    <a href="/pisces/">
+                    <img src="{%static '/images/star/雙魚.jpg'%}">
+                    <div class="constellationText">雙魚座</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
