@@ -1,0 +1,143 @@
+h2{
+background-color:#4c5870;
+color:white;
+font-family:verdana;
+}
+h3{
+background-color:#ebedec;
+font-family:verdana;
+}
+p{
+font-family:verdana;
+}
+hr{
+    border: none;
+    background-color: #a2a9af;
+    height: 0.5px;
+    width: 1000px;
+}
+.header{
+height:40px;
+background:#ebedec;
+
+}
+.header .head{
+    font-family:verdana;
+    font-weight: bold;
+    text-align:center;
+    font-size:28px;
+    color:#4c5870;
+    line-height: 40px;
+}
+.header1{
+    background-color: #00204f;
+    height: 450px;
+}
+.header1 img{
+    display: block;
+    width: 650px; ;
+    height: 450px;
+    margin: 0 auto;
+
+}
+.topic{
+    height: 100px;
+}
+.topic .container{
+    width: 400px;
+    margin: 0 auto;
+}
+.topic .fire{
+    float: left;
+}
+.topic .wind{
+    float: left;
+    margin-left:10px ;
+}
+.topic .earth{
+    float: left;
+    margin-left:10px ;
+}
+.topic .water{
+    float: left;
+    margin-left:10px ;
+}
+.topic  a{
+    text-decoration: none;
+    padding: 12px;
+    line-height: 100px;
+}
+.topic  a:link{
+    color: #3d3d3b;
+    border: 1px solid #4c5870;
+}
+.topic  a:visited{
+    color: #3d3d3b;
+    border: 1px solid #4c5870;
+}
+.topic  a:hover{
+    color: #a2a9af;
+    border: 1px solid rgba(222, 214, 214, 0.861);
+}
+body{
+margin:0;
+}
+
+
+#firepage{
+    height: 400px;
+    margin-top: 50px;
+}
+#windpage{
+    height: 400px;
+    margin-top: 50px;
+}
+#earthpage{
+    height: 400px;
+    margin-top: 50px;
+}
+#waterpage{
+    height: 400px;
+    margin-top: 50px;
+}
+.pageContent{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.constellation{
+    float: left;
+    margin: 20px;
+}
+.constellationText{
+    text-align: center;
+}
+
+.Page a{
+    text-decoration: none;
+}
+.Page a:link{
+    color: #3d3d3b;
+}
+.Page a:visited{
+    color: #3d3d3b;
+}
+.Page a:hover{
+    color: #a2a9af;
+    opacity: 0.8;
+}
+.content{
+    width: 1000px;
+    margin: 0 auto;
+}
+.content img{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 10px;
+}
+.content .text{
+    float: left;
+    margin: 10px;
+    width: 900px;
+}
